@@ -43,5 +43,36 @@
    31  docker ps
    32  docker rm be77
    33  docker rm be77 -f
+Docker networking
+  1  docker ps
+    2  docker logs
+    3  docker logs e9f
+    4  docker ps
+    5  ip a
+    6  docker container inspect
+    7  docker ps
+    8  docker container inspect e9f
+    9  history
+[root@ip-172-31-10-20 ~]#
+ 10  docker ps
+   11  docker ps -a
+   12  docker container run --publish 81:80 --detach httpd
+   13  docker container run --publish 82:80 --detach httpd
+   14  docker ps
+   15  docker network ls
+   16  docker network inspect 33b78cba3930
+   17  docker network ls
+   18  docker container run --publish 82:80 --detach --network host  httpd
+   19  docker ps
+   20  docker network ls
+   21  docker ps -a
+   22  docker container run --publish 80 --detach  httpd
+   23*
+   24  docker container run --detach  httpd
+   25  docker ps
+   26  docker container run --detach  httpd
+   27  docker ps
+   28  docker run --name mongo -d mongo
+   29  docker ps
 
 
