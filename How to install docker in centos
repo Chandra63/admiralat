@@ -30,4 +30,18 @@
    20  docker top be77
    21  docker ps
    22  history
+   
+   How to remove a container
+    23  docker ps
+   24  docker stop be77
+   25  docker ps
+   26  docker ps -a
+   27  docker start be77
+   28  docker ps
+   29  docker ps -a
+   30  docker rm 02d
+   31  docker ps
+   32  docker rm be77
+   33  docker rm be77 -f
+
 
